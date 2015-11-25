@@ -35,7 +35,7 @@ Homework is given each Thursday, and is always due the next Thursday. Feedback o
 | :--------: | ---------- | ----------- | -------- | -------- |
 | 1          | Push `hw_1`directory to Github, with a README.md under your `name-username` folder | [01_Dev_Workflow](https://github.com/kradul/bewd_sf_12/tree/master/01_Dev_Workflow) | November 19th | None  |
 | 2          | Secret Number Homework.  <br> Be sure to push a `hw_2` directory with `secret_number1.rb` [Homework_Link](https://github.com/kradul/bewd_sf_12/blob/master/02_Variables_Methods/hw_secret_number1.rb) |[02_Variables_Methods](https://github.com/kradul/bewd_sf_12/blob/master/02_Variables_Methods/hw_secret_number1.rb) | November 24th | December 3rd  |
-| 3          | - | | |  |
+| 3          | [Teddit_Hashes Homework](https://github.com/kradul/bewd_sf_12/blob/master/03_Collections_Loops/starter_code/ex_teddit_hashes.rb)  | [03_Collection_Loops](https://github.com/kradul/bewd_sf_12/tree/master/03_Collections_Loops) | December 2 |   |
 | 4          | - | | |  | 
 | 5          | - | | |  | 
 | 6          | - | | |  | 
