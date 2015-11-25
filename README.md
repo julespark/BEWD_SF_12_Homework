@@ -1,7 +1,8 @@
 # BEWD_SF_12_Homework Repository
-====
+
 This is the repository where you'll put your homework.
 
+Click here to access to [BEWD_SF_12](https://github.com/kradul/bewd_sf_12)
 How To Use This Repo
 -----------------------
 
@@ -28,17 +29,17 @@ If any files are in the pull request outside of your personal folder, we will se
 Weekly Homework
 ----------------
 
-**Submit homework by pushing to your bewd_sf_10_homework repo, then submit a pull request**
-Homework is given each Tuesday, and is always due the next Tuesday. Feedback on each assignment will be complete by Thursday.
+**Submit homework by pushing to your bewd_sf_12_homework repo, then submit a pull request**
+Homework is given each Thursday, and is always due the next Thursday. Feedback on each assignment will be completed by the following Thursday
 
 | HW # | Assignment | Class Topic | Due Date | Feedback <br> _(if hw submitted by due date)_ |
 | :--------: | ---------- | ----------- | -------- | -------- |
-| 1          | - | | |  |
-| 2          | - | | |  |
-| 3          | - | | |  |
-| 4          | - | | |  | 
-| 5          | - | | |  | 
-| 6          | - | | |  | 
+| 1          | Push `hw_1`directory to Github, with a README.md under your `name-username` folder | [01_Dev_Workflow](https://github.com/kradul/bewd_sf_12/tree/master/01_Dev_Workflow) | November 19th | None  |
+| 2          | Secret Number Homework.  <br> Be sure to push a `hw_2` directory with `secret_number1.rb` [Homework_Link](https://github.com/kradul/bewd_sf_12/blob/master/02_Variables_Methods/hw_secret_number1.rb) |[02_Variables_Methods](https://github.com/kradul/bewd_sf_12/blob/master/02_Variables_Methods/hw_secret_number1.rb) | November 24th | December 3rd  |
+| 3          | [Teddit_Hashes Homework](https://github.com/kradul/bewd_sf_12/blob/master/03_Collections_Loops/starter_code/ex_teddit_hashes.rb)  | [03_Collection_Loops](https://github.com/kradul/bewd_sf_12/tree/master/03_Collections_Loops) | December 2 |   |
+| 4          | - | | |  |
+| 5          | - | | |  |
+| 6          | - | | |  |
 | 7          | - | | |  |
 | 8          | - | | |  |
 | 9          | - | | |  |
@@ -46,12 +47,28 @@ Homework is given each Tuesday, and is always due the next Tuesday. Feedback on 
 | 11         | - | | |  |
 | 12         | - | | |  |
 | 13         | - | | |  |
-| 14         | - | | |  | 
-| 15         | - | | |  | 
-| 16         | - | | |  | 
-| 17         | - | | |  | 
-| 18         | - | | |  | 
-| 19         | - | | |  | 
-| ...        | - | | |  | 
+| 14         | - | | |  |
+| 15         | - | | |  |
+| 16         | - | | |  |
+| 17         | - | | |  |
+| 18         | - | | |  |
+| 19         | - | | |  |
+| ...        | - | | |  |
+
+###Office Hours
 
 
+| Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday |
+| ------ | ------ | ------- | --------- | -------- | ------ | -------- |
+| Sandi <br> 2:00pm-4:00pm  | - |Christine: <br> 5:30-6:30pm| - |Christine: <br> 5:30-6:30pm| - | -|
+
+###Bonus Resources
+-------
+Note: these are optional resources and **not** homework, but are helpful and relevant if you wish to learn more. Peruse them at your leisure.
+
+| Week #| Resource | Class Topic |
+|------ | -------- | ----------- |
+| 1 | [Code School Try Git](https://www.codeschool.com/courses/try-git) <br/>[Git Kitchen with Chef Ramsey](http://bloggytoons.com/posts/2013/10/10/git-kitchen-wchef-ramsay) | Git |
+| 1 | [zshell](https://github.com/robbyrussell/oh-my-zsh) | Terminal |
+| 1 | [Pragmatic Programing PDF](http://chrismaloney.org/notes_s/Ruby%20on%20Rails_/ProgrammingRuby-4thEd.pdf) | Ruby|
+|1|-|-|
