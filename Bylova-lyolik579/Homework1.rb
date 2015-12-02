@@ -9,7 +9,7 @@ attempts = 2
 
 
     def guess_check ( player_input, secret_number )    
-        if player_name = secret_number
+        if player_input == secret_number
             puts "Congratulations, you've guessed the secret number! #{[secret_number]}"
             exit
         elsif player_input > secret_number
@@ -30,6 +30,5 @@ attempts = 2
         end
 
         player_input = gets.to_i
-
     end
 
