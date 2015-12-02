@@ -53,14 +53,27 @@ Press Ctrl-D to continue past the breakpoint
 
 require "pry"
 
-def guess_number (secret_number)
+secret_number = rand(10)
+
+binding.pry
+
+def guess (secret_number)
 	puts "Guess a number between 1 and 10, you have 2 tries"
 	guess = gets.chomp.to_i
 	if guess == secret_number
 		puts "Congratulations you guessed correctly!"
 	elsif guess > secret_number
-		puts "Guess is too high"
+		puts "Your Guess is too high"
 	else 
-		puts "Guess is too low"
+		puts "Your Guess is too low"
+	end
+end
+
+attempt_1 = guess secret_number
+
+if !attempt_1
+	attempt_2 = guess secret_number
+	if !attempt_2
+		puts "You lost, out of tries. The number was #{secret_number}"
 	end
 end

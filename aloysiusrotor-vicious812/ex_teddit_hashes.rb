@@ -21,8 +21,7 @@ def get_input
 end
 
 def show_new_story_notification(story)
-  stories.each.do stories
-    puts "New story added! #{story[:title]}, Category: #{story[:category].capitalize}, Current Upvotes: #{story[:upvotes]}"
+  puts "New story added! #{story[:title]}, Category: #{story[:category].capitalize}, Current Upvotes: #{story[:upvotes]}"
 end
 
 def calculate_upvotes(story)
@@ -36,6 +35,12 @@ def calculate_upvotes(story)
 
   if story[:category].downcase == "food"
     story[:upvotes] *= 3
+  end
+end
+
+def show_all_stories(stories)
+  stories.each do |story|
+    puts "Story - #{story[:title]}, Category: #{story[:category].capitalize}, Current Upvotes: #{story[:upvotes]}"
   end
 end
 
@@ -53,10 +58,12 @@ while user_response == "y"
   story[:category] = get_input
 
   calculate_upvotes(story)
+  stories << story
+
   show_new_story_notification(story)
 
   puts "Would you like to add another story? Enter 'y' or 'n'"
   user_response = get_input.strip.downcase
 end
 
-show_new_story_notification(story)
+show_all_stories stories
