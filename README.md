@@ -72,3 +72,4 @@ Note: these are optional resources and **not** homework, but are helpful and rel
 | 1 | [zshell](https://github.com/robbyrussell/oh-my-zsh) | Terminal |
 | 1 | [Pragmatic Programing PDF](http://chrismaloney.org/notes_s/Ruby%20on%20Rails_/ProgrammingRuby-4thEd.pdf) | Ruby|
 |1|-|-|
+=======
