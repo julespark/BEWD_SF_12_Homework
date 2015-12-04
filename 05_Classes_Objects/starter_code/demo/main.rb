@@ -1,13 +1,16 @@
 #Code Demo
+require 'pry'
 
 #Read this file and figure out what properties and methods the Apartment class needs to have!
 
 #This part is important, it's how this file has access to the definition of the Apartment class:
 require_relative 'lib/apartment'
-
-#create a new Apartment 
-# unit = "1A", sqft = 600, num_bedrooms = 1, num_bathrooms = 1
+binding.pry
+#create a new Apartment
+# unit = "1A", sqft = 600, num_bedrooms = 1, num_bathrooms = 1bindi
 a1 = Apartment.new("1A", 600, 1, 1)
+
+binding.pry
 
 puts "A new apartment has been created:"
 puts a1.to_s()

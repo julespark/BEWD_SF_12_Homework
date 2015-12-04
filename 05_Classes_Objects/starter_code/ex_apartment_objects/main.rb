@@ -1,13 +1,14 @@
 require_relative 'lib/building'
 require_relative 'lib/apartment'
 require_relative 'lib/person'
+require 'pry'
 =begin
 Read this file and use it to understand how to fill in each class file
 (Apartment, Building and Person) in the lib folder
 
 This file has examples of methods and properties that each class should have.
 
-When a method is called, below you will see a commented out version of 
+When a method is called, below you will see a commented out version of
 what it should print out and return
 =end
 
@@ -23,16 +24,19 @@ building = Building.new("Forest Lofts", "125 Elm St", 3)
 #set the building's apartments
 building.apartments = [a1, a2, a3]
 
+binding.pry
+
+
 #display the building's apartments
 puts "The building #{building.name} has the following apartments:"
-building.display_apartments() 
+building.display_apartments()
 # "Unit 1A has 600 sqft, 1 bed, 1 bath, it's available!"
 # "Unit 1B has 1400 sqft, 2 bed, 1 bath, it's available!"
 # "Unit 2A has 2000 sqft, 3 bed, 2 bath, it's available!"
 # => nil
 
 #create a renter with name, a budget, and a credit score
-steve = new Person("Steve", 1000, 650)
+steve = Person.new("Steve", 1000, 650)
 
 puts "Now Steve wants to rent an apartment."
 
@@ -42,12 +46,12 @@ puts "Now Steve wants to rent an apartment."
 #  AND
 #  * their budget is larger than the rent for the apartment
 
-puts "Steve wants to apply for Unit A2. Is he eligible?"
+puts "Steve wants to apply for Unit A2. Is he eligible? #{a2.apply_renter?(steve)}"
 #let's see if Steve can rent apartment a2?
 a2.apply_renter?(steve)
 # => false
 
-puts "Now Steve wants to apply for Unit A1. Is he eligible?"
+puts "Now Steve wants to apply for Unit A1. Is he eligible? #{a1.apply_renter?(steve)}"
 a1.apply_renter?(steve)
 # => true
 
@@ -59,7 +63,7 @@ a1.show_renters()
 
 #display the building's apartments
 puts "The building #{building.name} has the following apartments:"
-building.display_apartments() 
+building.display_apartments()
 # "Unit 1A has 600 sqft, 1 bed, 1 bath, it's taken."
 # "Unit 1B has 1400 sqft, 2 bed, 1 bath, it's available!"
 # "Unit 2A has 2000 sqft, 3 bed, 2 bath, it's available!"
