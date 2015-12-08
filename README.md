@@ -38,7 +38,7 @@ Homework is given each Thursday, and is always due the next Thursday. Feedback o
 | 2          | Secret Number Homework.  <br> Be sure to push a `hw_2` directory with `secret_number1.rb` [Homework_Link](https://github.com/kradul/bewd_sf_12/blob/master/02_Variables_Methods/hw_secret_number1.rb) |[02_Variables_Methods](https://github.com/kradul/bewd_sf_12/blob/master/02_Variables_Methods/hw_secret_number1.rb) | November 24th | December 3rd  |
 | 3          | [Teddit_Hashes Homework](https://github.com/kradul/bewd_sf_12/blob/master/03_Collections_Loops/starter_code/ex_teddit_hashes.rb)  | [03_Collection_Loops](https://github.com/kradul/bewd_sf_12/tree/master/03_Collections_Loops) | December 2 | December 8th  |
 | 4          | Optional: Finish Step two of [Teddit_Hashes Homework](https://github.com/kradul/bewd_sf_12/blob/master/03_Collections_Loops/starter_code/ex_teddit_hashes.rb) |[04_Loops_Classes](https://github.com/kradul/bewd_sf_12/tree/master/04_Loops_Classes) | December 3rd | December 8th |
-| 5          | [Hw_store](https://github.com/kradul/bewd_sf_12/tree/master/05_Classes_Objects/starter_code/hw_store) | [O5_Classes_Objects](https://github.com/kradul/bewd_sf_12/tree/master/05_Classes_Objects) |December 10 | December 17 |
+| 5          | [Hw_store](https://github.com/kradul/bewd_sf_12/tree/master/05_Classes_Objects/starter_code/hw_store) | [05_Classes_Objects](https://github.com/kradul/bewd_sf_12/tree/master/05_Classes_Objects) |December 10 | December 17 |
 | 6          | - | | |  |
 | 7          | - | | |  |
 | 8          | - | | |  |
