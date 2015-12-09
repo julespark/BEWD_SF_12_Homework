@@ -67,7 +67,7 @@ Homework is given each Thursday, and is always due the next Thursday. Feedback o
 Note: these are optional resources and **not** homework, but are helpful and relevant if you wish to learn more. Peruse them at your leisure.
 
 | # | Date | Exercise | Gist |
-|------ | -------- | ----------- |
+|------|----- | -------- | ----------- |
 | 1 | December 3rd | [Teddit_Hashes Homework](https://github.com/kradul/bewd_sf_12/blob/master/03_Collections_Loops/starter_code/ex_teddit_hashes.rb)  | [Gist](https://gist.github.com/chylaudes/9e5bf962d89f604b7c32) |
 | | | |  |
 | | | |  |
