@@ -32,7 +32,6 @@ safeway = GroceryStore.new("Safeway")
 safeway.stock_item('banana', 1, 5)
 safeway.stock_item('oatmeal', 2, 10)
 safeway.stock_item('chocolate', 1.50 , 2)
-
 safeway.view_item('banana')
 # => "Safeway has 5 bananas for 1 dollar each."
 
@@ -43,6 +42,9 @@ jack = Customer.new("Jack", 10)
 jack.shopping_cart
 # => {}
 
+
+
+
 #jack wants to buy one banana from safeway:
 #remember to update how many bananas the store has left!! 
 #also remember to check if jack already had any bananas in his cart
@@ -52,10 +54,11 @@ jack.add_to_cart(safeway, 'banana', 1)
 
 jack.add_to_cart(safeway, 'chocolate', 2)
 
+binding.pry
+
 jack.checkout(safeway)
 # => "Jack spent $4 at Safeway"
 #remember to decrease jack's money (since he spent it) and also clear Jack's cart.
-
 
 #Jack goes shopping again! He forgot oatmeal.
 
