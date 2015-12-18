@@ -129,6 +129,7 @@ Kanban boards
 ----------------
 
 * [What is an API?](https://www.youtube.com/watch?v=FknvOGcLHmc)
+* [Simple Treehouse article of what an API is](http://sproutsocial.com/insights/what-is-an-api/)
 
 -------------
 ##Things to start thinking about?
