@@ -78,6 +78,7 @@ Do you have any helpful advice?
 **User Stories**
 
 ```
+
     User Stories: are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. 	
 ```
 They typically follow a simple template:
@@ -99,6 +100,7 @@ As a `tweeter`, I want to `automatically`  `share my quips on facebook`
 **Wireframes**
 
 ```
+
     Wireframes: It’s an important step in any screen design process. It primarily allows you to define the information hierarchy of your design, making it easier for you to plan the layout according to how you want your user to process the information.
 ```
 
