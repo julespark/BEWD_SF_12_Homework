@@ -146,6 +146,6 @@ Start with paper or a whiteboard, because you are then much less married to the 
 ###Milestones
 Outline some milestones for yourself based on how you prefer to work.
 
-##Please complete your Trello 
+####Please complete your Trello Possible Pitches Boards by Thursday, January 7th 2016! 
 
 
