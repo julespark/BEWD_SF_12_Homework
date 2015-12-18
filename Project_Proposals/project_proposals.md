@@ -73,7 +73,6 @@ Do you have any helpful advice?
 
 
 ###Some useful tools 
-<br>
 
 ####User Stories
 
@@ -112,7 +111,10 @@ As a `tweeter`, I want to `automatically`  `share my quips on facebook`
 <br>
 
 ####Trello Boards
+
 <br>
+Kanban boards
+![Imgur](http://i.imgur.com/2EkRIJc.png =400x)
 <br>
 ![](http://i.imgur.com/Pq5SJqr.png =400x)
 <br>
@@ -143,3 +145,7 @@ Start with paper or a whiteboard, because you are then much less married to the 
 
 ###Milestones
 Outline some milestones for yourself based on how you prefer to work.
+
+##Please complete your Trello 
+
+
