@@ -128,7 +128,7 @@ Kanban boards
 
 ----------------
 
-#TBA
+* [What is an API?](https://www.youtube.com/watch?v=FknvOGcLHmc)
 
 -------------
 ##Things to start thinking about?
@@ -145,6 +145,8 @@ Start with paper or a whiteboard, because you are then much less married to the 
 
 ###Milestones
 Outline some milestones for yourself based on how you prefer to work.
+
+#####Ideas: [GA Gallery](https://gallery.generalassemb.ly/BEWD?metro=)
 
 ####Please complete your Trello Possible Pitches Boards by Thursday, January 7th 2016! 
 
