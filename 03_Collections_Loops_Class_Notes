@@ -1,0 +1,38 @@
+/review
+
+1. Method is to not do redundant work over and over.
+2. DRY = Don't Repeat Yourself
+3. Defining is just writing our what the code is supposed to do, whereas calling it performs the operation.
+4. What is 'a'?; all the calculations have to be on the left side
+
+
+
+a << adds to the end of the array
+
+
+a.pop removes from the end of the arry; very last one
+shift returns the first one (simliar to pop, but for the front
+
+
+----
+#Create hash with string keys, NOTE curly brackets!
+s = { "a" => 5, "b" => 10}
+
+#Create hash with symbol keys
+h = {a:6, b:9, c:1}
+h[:a] #symbols
+h["a"] = null
+
+hashes will have => 
+
+#Show that symbol and string key are not the same
+#Access hash value
+#Add hash value
+
+
+
+hash would be useful for when accessing information that is not necessarily in order; name-phone#, memberId = cost, etc. anything associated to someone or something
+
+array would be useful for storing numbers or adding in new information that comes in; anonymous data for survey results, lottery
+--order is important, list
+--days of the week and order is important
