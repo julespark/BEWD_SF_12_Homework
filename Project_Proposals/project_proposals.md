@@ -75,12 +75,10 @@ Do you have any helpful advice?
 ###Some useful tools 
 <br>
 
-**User Stories**
+####User Stories
 
-```
-
-    User Stories: are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. 	
-```
+**User Stories:** are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. 
+<br>	
 They typically follow a simple template:
 
 
@@ -97,12 +95,10 @@ As a `tweeter`, I want to `automatically`  `share my quips on facebook`
 
 <br>
 
-**Wireframes**
+####Wireframes
 
-```
 
-    Wireframes: It’s an important step in any screen design process. It primarily allows you to define the information hierarchy of your design, making it easier for you to plan the layout according to how you want your user to process the information.
-```
+**Wireframes:** It’s an important step in any screen design process. It primarily allows you to define the information hierarchy of your design, making it easier for you to plan the layout according to how you want your user to process the information.
 
 
  ![example of wireframe](http://i.stack.imgur.com/QYoQ3.png =400x)
@@ -115,7 +111,7 @@ As a `tweeter`, I want to `automatically`  `share my quips on facebook`
 
 <br>
 
-**Trello Boards**
+####Trello Boards
 <br>
 <br>
 ![](http://i.imgur.com/Pq5SJqr.png =400x)
