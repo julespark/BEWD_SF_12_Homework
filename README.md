@@ -40,7 +40,7 @@ Homework is given each Thursday, and is always due the next Thursday. Feedback o
 | 4          | Optional: Finish Step two of [Teddit_Hashes Homework](https://github.com/kradul/bewd_sf_12/blob/master/03_Collections_Loops/starter_code/ex_teddit_hashes.rb) |[04_Loops_Classes](https://github.com/kradul/bewd_sf_12/tree/master/04_Loops_Classes) | December 3rd | December 8th |
 | 5          | [Hw_store](https://github.com/kradul/bewd_sf_12/tree/master/05_Classes_Objects/starter_code/hw_store) | [05_Classes_Objects](https://github.com/kradul/bewd_sf_12/tree/master/05_Classes_Objects) |December 10 | December 17 |
 | 6          | [Class_07_HW](https://github.com/kradul/bewd_sf_12/tree/master/07_First_Rails_App/homework) |[06_Sharing_Behavior](https://github.com/kradul/bewd_sf_12/tree/master/06_Sharing_Behavior)<br/>[07_First_Rails_App](https://github.com/kradul/bewd_sf_12/tree/master/07_First_Rails_App)| December 17 | January 4 |
-| 7          | - | | |  |
+| 7          | Finish the Rock Paper scissors portion of your game app [Game_app](https://github.com/kradul/bewd_sf_12/tree/master/08_Routes_Cont_Views/starter_code/games_app) | [08_Routes_Cont_Views](https://github.com/kradul/bewd_sf_12/tree/master/08_Routes_Cont_Views) | December 22 | January 4  |
 | 8          | - | | |  |
 | 9          | - | | |  |
 | 10         | - | | |  |
