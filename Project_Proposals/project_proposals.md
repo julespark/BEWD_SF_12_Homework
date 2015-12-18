@@ -108,7 +108,7 @@ As a `tweeter`, I want to `automatically`  `share my quips on facebook`
 <br>
 <br>
 
-![hello](https://danchak99.files.wordpress.com/2014/07/er_0501.jpg =400x)
+![](http://danchak99.files.wordpress.com/2014/07/er_0501.jpg =400x)
 
 <br>
 
