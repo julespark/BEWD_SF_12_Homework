@@ -16,28 +16,23 @@ class Album < Collections
 		# Based on the user's answer print a message (see example).
 		
 		super()
-		puts "Would you like to buy this album? (y) or (n)"
-		if gets.chomp.to_s == "y"
-			puts "Thanks for buying #{@title}."
-		else 
-			puts "Ok. Maybe buy it next time."
+		# the loop never ends
+		response = ""
+		while response != "y" || response != "n"
+			puts "Would you like to buy this album? (y) or (n)"
+			response = gets.chomp.to_s
+			if response == "y"
+				puts "Thanks for buying #{@title}."
+			elsif response == "n"
+				puts "Ok. Maybe buy it next time."
+			else
+				puts "Sorry, I didn't catch your response."
+			end
+			binding.pry
 		end
+	end
 
-
-
-
-		# # the loop never ends
-		# response = ""
-		# while response != "y" || response != "n"
-		# 	puts "Would you like to buy this album? (y) or (n)"
-		# 	response = gets.chomp.to_s
-		# 	if response == "y"
-		# 		puts "Thanks for buying #{@title}."
-		# 	elsif response == "n"
-		# 		puts "Ok. Maybe buy it next time."
-		# 	else
-		# 		puts "Sorry, I didn't catch your response."
-		# 	end
-		# end
+	def self.help
+		puts "Albums are created by an artist. And they have a genre."
 	end
 end

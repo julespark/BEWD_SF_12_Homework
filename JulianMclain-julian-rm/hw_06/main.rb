@@ -6,9 +6,9 @@ require 'pry'
 
 #code for testing, ignore this:
 def assert_equal(expected, actual)
-  # unless expected == actual
-  #   abort "Expected #{expected} to match #{actual} on line #{caller.first.split(":")[1]}"
-  # end
+  unless expected == actual
+    abort "Expected #{expected} to match #{actual} on line #{caller.first.split(":")[1]}"
+  end
 end
 
 #Create an albums class that has a list of songs, title, artist, and genre
@@ -106,11 +106,6 @@ assert_equal(sweet_tunes.song_list, [
 		"Sound of Silence",
 		"There She Goes"
 	])
-
-
-binding.pry
-
-
 
 #and remove songs:
 sweet_tunes.remove_song("Have a Cigar")

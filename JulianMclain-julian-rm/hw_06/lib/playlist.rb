@@ -13,5 +13,11 @@ class Playlist < Collections
 	end
 
 	def remove_song (title)
+		song_list.delete(title)
+	end
+
+	def self.help
+		puts "Playlists are created by the user."
+		puts "You can add songs and remove them."
 	end
 end
