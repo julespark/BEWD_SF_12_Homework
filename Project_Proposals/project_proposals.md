@@ -108,8 +108,7 @@ As a `tweeter`, I want to `automatically`  `share my quips on facebook`
 <br>
 <br>
 
-![](http://danchak99.files.wordpress.com/2014/07/er_0501.jpg =400x)
-
+![Imgur](http://i.imgur.com/QOCKtCG.png =400x)
 <br>
 
 ####Trello Boards
