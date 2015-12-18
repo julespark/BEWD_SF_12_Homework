@@ -107,7 +107,8 @@ As a `tweeter`, I want to `automatically`  `share my quips on facebook`
 **Schema Drawings**
 <br>
 <br>
-![hello](http://mergate.com/images/schema_design1.png =400x)
+
+![hello](https://danchak99.files.wordpress.com/2014/07/er_0501.jpg =400x)
 
 <br>
 
