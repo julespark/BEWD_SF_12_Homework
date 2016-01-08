@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
-  before_action :load_movie, only: [:update, :edit, :show]
+  before_action :load_movie, only: [:edit, :show, :update]
 
   def index
     @movies = Movie.all()
@@ -10,7 +10,7 @@ class MoviesController < ApplicationController
   end
 
   def create
-     @movie = Movie.new(save_movie_params)
+     @movie = Movie.new(safe_movie_params)
     if @movie.save
       redirect_to @movie
     else
@@ -19,29 +19,29 @@ class MoviesController < ApplicationController
   end
 
   def edit
+
   end
 
   def update
-    
+    if @movie.update(safe_movie_params)
+      redirect_to @movie
+    else
+      render 'edit'
+    end
   end
 
   def show
-    @movie = Movie.find_by_title(params[:title])
+
   end
 
-  private
+private
 
-    def save_movie_params
-     params.require('movie').permit(:title, :description, :year_released, :rating)
-    end
+  def safe_movie_params
+    params.require('movie').permit(:title, :description, :year_released, :rating)
+  end
 
-    def load_movie 
-      @movie = Movie.find(params[:id])
-    rescue ActiveRecord::RecordNotFound
-      flash.now[:notice] = "Invalid movie ID #{params[:id]}"
-      redirect_to root_path
-    end
-    
-
+  def load_movie
+   @movie = Movie.find(params[:id])
+  end
  
 end
