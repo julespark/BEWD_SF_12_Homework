@@ -1,0 +1,3 @@
+I, [2016-01-08T22:22:59.717617 #2645]  INFO -- : Migrating to CreateMovies (20130610234924)
+I, [2016-01-08T22:22:59.730412 #2645]  INFO -- : Migrating to AddGenreToMovies (20160106052322)
+I, [2016-01-08T22:22:59.751546 #2645]  INFO -- : Migrating to AddRatingToMovies (20160109061541)
