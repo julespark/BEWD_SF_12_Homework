@@ -1,0 +1,11 @@
+<% @users.each do |user| %>
+  <section>
+  	<header>
+  		<%= link_to user.name, user %>
+  		<% if user.premium_member === 1 %>
+  			<%= "(✓)" %>
+  		<% end %>
+  	</header>
+  </section>
+  <br>
+<% end %>

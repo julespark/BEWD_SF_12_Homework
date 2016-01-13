@@ -1,0 +1,17 @@
+<h1>Find your friends on Twitter!</h1>
+
+<h3><%= link_to "+ Add New User", new_user_path %></h3>
+
+<%= form_tag "/users", method: "GET" do %>
+  <%= text_field_tag :q, params[:q] %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<br>
+
+<%= render 'list' %>
+
+<br>
+
+<%= link_to 'BACK', root_path %>
+

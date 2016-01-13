@@ -1,0 +1,8 @@
+<% @tweets.each do |tweet| %>
+  <section>
+  	<header>
+  		<%= link_to tweet.text, tweet %>
+  	</header>
+  </section>
+  <br>
+<% end %>
