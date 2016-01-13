@@ -8010,3 +8010,994 @@ Processing by MoviesController#show as HTML
   [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "7"]]
   Rendered movies/show.html.erb within layouts/application (1.6ms)
 Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-11 23:33:05 -0800
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%%' OR description LIKE '%%' OR year_released LIKE '%%')[0m
+  Rendered movies/_list.html.erb (19.9ms)
+  Rendered movies/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 94ms (Views: 78.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:33:05 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:33:05 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:33:05 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:33:05 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:33:05 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:33:05 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:33:05 -0800
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2016-01-11 23:33:10 -0800
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (29.9ms)
+  Rendered movies/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2016-01-11 23:33:54 -0800
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "movie"=>{"title"=>"Star Wars: The Force Awakens", "description"=>"A long time ago in a galaxy far, far away....", "year_released"=>"2015", "rating"=>"3"}, "commit"=>"Create Movie"}
+Unpermitted parameters: rating
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "title", "updated_at", "year_released") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 12 Jan 2016 07:33:54 UTC +00:00], ["description", "A long time ago in a galaxy far, far away...."], ["title", "Star Wars: The Force Awakens"], ["updated_at", Tue, 12 Jan 2016 07:33:54 UTC +00:00], ["year_released", 2015]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies/24
+Completed 302 Found in 13ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/movies/24" for 127.0.0.1 at 2016-01-11 23:33:54 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "24"]]
+  Rendered movies/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:33:54 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:33:54 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:33:54 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:33:54 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:33:54 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:33:54 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:33:54 -0800
+
+
+Started GET "/movies/24/edit" for 127.0.0.1 at 2016-01-11 23:33:57 -0800
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "24"]]
+  Rendered movies/_form.html.erb (5.4ms)
+  Rendered movies/edit.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/movies/24" for 127.0.0.1 at 2016-01-11 23:34:00 -0800
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "movie"=>{"title"=>"Star Wars: The Force Awakens", "description"=>"aA long time ago in a galaxy far, far away....", "year_released"=>"2015", "rating"=>"3"}, "commit"=>"Update Movie", "id"=>"24"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "24"]]
+Unpermitted parameters: rating
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "movies" SET "description" = ?, "updated_at" = ? WHERE "movies"."id" = 24[0m  [["description", "aA long time ago in a galaxy far, far away...."], ["updated_at", Tue, 12 Jan 2016 07:34:00 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies/24
+Completed 302 Found in 7ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/movies/24" for 127.0.0.1 at 2016-01-11 23:34:00 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "24"]]
+  Rendered movies/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:34:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:00 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:34:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:00 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:00 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:00 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:00 -0800
+
+
+Started GET "/movies/24/edit" for 127.0.0.1 at 2016-01-11 23:34:02 -0800
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "24"]]
+  Rendered movies/_form.html.erb (4.5ms)
+  Rendered movies/edit.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/movies/24" for 127.0.0.1 at 2016-01-11 23:34:05 -0800
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "movie"=>{"title"=>"Star Wars: The Force Awakens", "description"=>"A long time ago in a galaxy far, far away....", "year_released"=>"2015", "rating"=>"3"}, "commit"=>"Update Movie", "id"=>"24"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "24"]]
+Unpermitted parameters: rating
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "movies" SET "description" = ?, "updated_at" = ? WHERE "movies"."id" = 24[0m  [["description", "A long time ago in a galaxy far, far away...."], ["updated_at", Tue, 12 Jan 2016 07:34:05 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies/24
+Completed 302 Found in 6ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/movies/24" for 127.0.0.1 at 2016-01-11 23:34:05 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "24"]]
+  Rendered movies/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:34:05 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:05 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:34:05 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:05 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:05 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:05 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:05 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-11 23:34:09 -0800
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (title LIKE '%%' OR description LIKE '%%' OR year_released LIKE '%%')
+  Rendered movies/_list.html.erb (4.9ms)
+  Rendered movies/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/21" for 127.0.0.1 at 2016-01-11 23:34:18 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "21"]]
+  Rendered movies/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/movies/24" for 127.0.0.1 at 2016-01-11 23:34:23 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "24"]]
+  Rendered movies/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=shawshank&commit=Search" for 127.0.0.1 at 2016-01-11 23:34:30 -0800
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"shawshank", "commit"=>"Search"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%shawshank%' OR description LIKE '%shawshank%' OR year_released LIKE '%shawshank%')[0m
+  Rendered movies/_list.html.erb (0.8ms)
+  Rendered movies/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:34:30 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:30 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:34:30 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:30 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:30 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:30 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:30 -0800
+
+
+Started GET "/?utf8=%E2%9C%93&q=sta&commit=Search" for 127.0.0.1 at 2016-01-11 23:34:34 -0800
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"sta", "commit"=>"Search"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (title LIKE '%sta%' OR description LIKE '%sta%' OR year_released LIKE '%sta%')
+  Rendered movies/_list.html.erb (1.5ms)
+  Rendered movies/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:34:34 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:34 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:34 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:34 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:34 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:34:34 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:34:34 -0800
+
+
+Started GET "/movies/22" for 127.0.0.1 at 2016-01-11 23:36:03 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "22"]]
+  Rendered movies/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/movies/22/edit" for 127.0.0.1 at 2016-01-11 23:36:04 -0800
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "22"]]
+  Rendered movies/_form.html.erb (5.0ms)
+  Rendered movies/edit.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/movies/22" for 127.0.0.1 at 2016-01-11 23:36:06 -0800
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "movie"=>{"title"=>"test title", "description"=>"test description", "year_released"=>"2015", "rating"=>"3"}, "commit"=>"Update Movie", "id"=>"22"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "22"]]
+Unpermitted parameters: rating
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies/22
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/22" for 127.0.0.1 at 2016-01-11 23:36:06 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "22"]]
+  Rendered movies/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:36:07 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:36:07 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:36:07 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:36:07 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:36:07 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:36:07 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:36:07 -0800
+
+
+Started GET "/movies/22" for 127.0.0.1 at 2016-01-11 23:36:10 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "22"]]
+  Rendered movies/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-11 23:36:11 -0800
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (title LIKE '%%' OR description LIKE '%%' OR year_released LIKE '%%')
+  Rendered movies/_list.html.erb (3.6ms)
+  Rendered movies/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/24" for 127.0.0.1 at 2016-01-11 23:36:26 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "24"]]
+  Rendered movies/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/24/edit" for 127.0.0.1 at 2016-01-11 23:36:28 -0800
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "24"]]
+  Rendered movies/_form.html.erb (3.3ms)
+  Rendered movies/edit.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/movies/24" for 127.0.0.1 at 2016-01-11 23:36:29 -0800
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "movie"=>{"title"=>"Star Wars: The Force Awakens", "description"=>"A long time ago in a galaxy far, far away....", "year_released"=>"2015", "rating"=>"3"}, "commit"=>"Update Movie", "id"=>"24"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "24"]]
+Unpermitted parameters: rating
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies/24
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/24" for 127.0.0.1 at 2016-01-11 23:36:29 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "24"]]
+  Rendered movies/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:36:30 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:36:30 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:36:30 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:36:30 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:36:30 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:36:30 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:36:30 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-11 23:37:01 -0800
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%%' OR description LIKE '%%' OR year_released LIKE '%%')[0m
+  Rendered movies/_list.html.erb (3.8ms)
+  Rendered movies/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2016-01-11 23:37:04 -0800
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (3.9ms)
+  Rendered movies/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2016-01-11 23:37:31 -0800
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (3.0ms)
+  Rendered movies/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2016-01-11 23:37:35 -0800
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "movie"=>{"title"=>"test", "description"=>"test", "year_released"=>"test", "rating"=>"3"}, "commit"=>"Create Movie"}
+Unpermitted parameters: rating
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered movies/_form.html.erb (5.1ms)
+  Rendered movies/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:37:36 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:37:36 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:37:36 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:37:36 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:37:36 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:37:36 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:37:36 -0800
+
+
+Started POST "/movies" for 127.0.0.1 at 2016-01-11 23:37:44 -0800
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "movie"=>{"title"=>"test", "description"=>"test test test", "year_released"=>"0000", "rating"=>"3"}, "commit"=>"Create Movie"}
+Unpermitted parameters: rating
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "title", "updated_at", "year_released") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 12 Jan 2016 07:37:44 UTC +00:00], ["description", "test test test"], ["title", "test"], ["updated_at", Tue, 12 Jan 2016 07:37:44 UTC +00:00], ["year_released", 0]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies/25
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/movies/25" for 127.0.0.1 at 2016-01-11 23:37:44 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "25"]]
+  Rendered movies/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:37:44 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:37:44 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:37:44 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:37:44 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:37:44 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:37:44 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:37:44 -0800
+
+
+Started DELETE "/movies/25" for 127.0.0.1 at 2016-01-11 23:38:38 -0800
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "id"=>"25"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "25"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "movies" WHERE "movies"."id" = ?  [["id", 25]]
+  [1m[36m (9.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 14ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-01-11 23:38:38 -0800
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (title LIKE '%%' OR description LIKE '%%' OR year_released LIKE '%%')
+  Rendered movies/_list.html.erb (4.2ms)
+  Rendered movies/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:38:38 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:38:38 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:38:38 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:38:38 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:38:38 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:38:38 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:38:38 -0800
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2016-01-11 23:38:39 -0800
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (3.8ms)
+  Rendered movies/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2016-01-11 23:38:46 -0800
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "movie"=>{"title"=>"test", "description"=>"test test test", "year_released"=>"2000", "rating"=>"3"}, "commit"=>"Create Movie"}
+Unpermitted parameters: rating
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("created_at", "description", "title", "updated_at", "year_released") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 12 Jan 2016 07:38:46 UTC +00:00], ["description", "test test test"], ["title", "test"], ["updated_at", Tue, 12 Jan 2016 07:38:46 UTC +00:00], ["year_released", 2000]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies/26
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/movies/26" for 127.0.0.1 at 2016-01-11 23:38:46 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "26"]]
+  Rendered movies/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:38:46 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:38:46 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:38:46 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:38:46 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:38:46 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:38:46 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:38:46 -0800
+
+
+Started DELETE "/movies/26" for 127.0.0.1 at 2016-01-11 23:38:59 -0800
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "id"=>"26"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "26"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 26]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 4ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-01-11 23:38:59 -0800
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%%' OR description LIKE '%%' OR year_released LIKE '%%')[0m
+  Rendered movies/_list.html.erb (4.3ms)
+  Rendered movies/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:39:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:00 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:00 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:00 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:39:00 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:00 -0800
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2016-01-11 23:39:01 -0800
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (3.1ms)
+  Rendered movies/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 25ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2016-01-11 23:39:11 -0800
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "movie"=>{"title"=>"test", "description"=>"test test test", "year_released"=>"2000", "rating"=>"3"}, "commit"=>"Create Movie"}
+Unpermitted parameters: rating
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "title", "updated_at", "year_released") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 12 Jan 2016 07:39:11 UTC +00:00], ["description", "test test test"], ["title", "test"], ["updated_at", Tue, 12 Jan 2016 07:39:11 UTC +00:00], ["year_released", 2000]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies/27
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/movies/27" for 127.0.0.1 at 2016-01-11 23:39:11 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "27"]]
+  Rendered movies/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:39:11 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:11 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:11 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:11 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:39:11 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:11 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:11 -0800
+
+
+Started DELETE "/movies/27" for 127.0.0.1 at 2016-01-11 23:39:42 -0800
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "id"=>"27"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "27"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "movies" WHERE "movies"."id" = ?  [["id", 27]]
+  [1m[36m (9.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 12ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-01-11 23:39:42 -0800
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (title LIKE '%%' OR description LIKE '%%' OR year_released LIKE '%%')
+  Rendered movies/_list.html.erb (4.5ms)
+  Rendered movies/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:39:42 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:42 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:42 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:39:42 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:42 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:42 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:42 -0800
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2016-01-11 23:39:43 -0800
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (6.3ms)
+  Rendered movies/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2016-01-11 23:39:50 -0800
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "movie"=>{"title"=>"test", "description"=>"asdf;lkjasdfl;kajsdf;lkajsdf", "year_released"=>"1000", "rating"=>"3"}, "commit"=>"Create Movie"}
+Unpermitted parameters: rating
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "title", "updated_at", "year_released") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 12 Jan 2016 07:39:50 UTC +00:00], ["description", "asdf;lkjasdfl;kajsdf;lkajsdf"], ["title", "test"], ["updated_at", Tue, 12 Jan 2016 07:39:50 UTC +00:00], ["year_released", 1000]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies/28
+Completed 302 Found in 6ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/movies/28" for 127.0.0.1 at 2016-01-11 23:39:50 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "28"]]
+  Rendered movies/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:39:50 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:50 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:50 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:39:50 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:50 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:50 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:50 -0800
+
+
+Started DELETE "/movies/28" for 127.0.0.1 at 2016-01-11 23:39:54 -0800
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "id"=>"28"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "28"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 28]]
+  [1m[35m (9.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 12ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-01-11 23:39:54 -0800
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%%' OR description LIKE '%%' OR year_released LIKE '%%')[0m
+  Rendered movies/_list.html.erb (4.9ms)
+  Rendered movies/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:39:54 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:54 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:54 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:39:54 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:54 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:54 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:39:54 -0800
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2016-01-11 23:40:14 -0800
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (5.0ms)
+  Rendered movies/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2016-01-11 23:40:19 -0800
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "movie"=>{"title"=>"test", "description"=>"asldfkjasl;dkfjakl;sd", "year_released"=>"1000", "rating"=>"3"}, "commit"=>"Create Movie"}
+Unpermitted parameters: rating
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "title", "updated_at", "year_released") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 12 Jan 2016 07:40:19 UTC +00:00], ["description", "asldfkjasl;dkfjakl;sd"], ["title", "test"], ["updated_at", Tue, 12 Jan 2016 07:40:19 UTC +00:00], ["year_released", 1000]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies/29
+Completed 302 Found in 5ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/movies/29" for 127.0.0.1 at 2016-01-11 23:40:19 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "29"]]
+  Rendered movies/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:40:19 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:40:19 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:40:19 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:40:19 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:40:19 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:40:19 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:40:19 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-11 23:43:27 -0800
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%%' OR description LIKE '%%' OR year_released LIKE '%%')[0m
+  Rendered movies/_list.html.erb (27.7ms)
+  Rendered movies/index.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 113ms (Views: 100.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:43:28 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:43:28 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:43:28 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:43:28 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:43:28 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:43:28 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:43:28 -0800
+
+
+Started GET "/movies/29" for 127.0.0.1 at 2016-01-11 23:43:32 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "29"]]
+  Rendered movies/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/movies/29" for 127.0.0.1 at 2016-01-11 23:43:34 -0800
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ypeu6Nk5ZJevFYVq0OpWaHfwMvgpJpb/2QFijodmaXI=", "id"=>"29"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "29"]]
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (3.6ms)[0m  [1mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 29]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 13ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-01-11 23:43:34 -0800
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%%' OR description LIKE '%%' OR year_released LIKE '%%')[0m
+  Rendered movies/_list.html.erb (4.6ms)
+  Rendered movies/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-11 23:43:34 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-11 23:43:34 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-11 23:43:34 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-11 23:43:34 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-11 23:43:34 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-11 23:43:34 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-11 23:43:34 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 16:41:03 -0800
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%%' OR description LIKE '%%' OR year_released LIKE '%%')[0m
+  Rendered movies/_list.html.erb (23.5ms)
+  Rendered movies/index.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 104ms (Views: 91.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-12 16:41:03 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-12 16:41:03 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-12 16:41:03 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-12 16:41:03 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-12 16:41:03 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-12 16:41:03 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-12 16:41:03 -0800
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2016-01-12 16:41:07 -0800
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (35.0ms)
+  Rendered movies/new.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=shawshank&commit=Search" for 127.0.0.1 at 2016-01-12 16:41:29 -0800
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"shawshank", "commit"=>"Search"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (title LIKE '%shawshank%' OR description LIKE '%shawshank%' OR year_released LIKE '%shawshank%')
+  Rendered movies/_list.html.erb (1.4ms)
+  Rendered movies/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-12 16:41:29 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-12 16:41:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-12 16:41:29 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-01-12 16:41:29 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-01-12 16:41:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-12 16:41:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-12 16:41:29 -0800
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2016-01-12 16:41:35 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered movies/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 16:41:43 -0800
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (title LIKE '%%' OR description LIKE '%%' OR year_released LIKE '%%')
+  Rendered movies/_list.html.erb (5.2ms)
+  Rendered movies/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.3ms)
