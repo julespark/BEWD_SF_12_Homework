@@ -1,0 +1,2 @@
+module HastagHelper
+end
