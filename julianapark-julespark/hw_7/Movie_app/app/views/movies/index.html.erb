@@ -1,0 +1,13 @@
+
+<font color= "red"><h1>Welcome to RetFlix! See our collection of movies below</h1></font>
+
+<img src="https://media.giphy.com/media/DtrguqHYeHJv2/giphy.gif">
+
+<% @all_movies.each do |m| %>
+	<h2><%= m.title %> </h2>
+
+	<p><%= m.description %></p>
+	<p><%= m.year_released %></p>
+
+
+<% end %>

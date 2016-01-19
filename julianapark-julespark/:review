@@ -1,0 +1,6 @@
+/review
+
+1. Method is to not do redundant work over and over.
+2. DRY = Don't Repeat Yourself
+3. Defining is just writing our what the code is supposed to do, whereas calling it performs the operation.
+4. What is 'a'?; all the calculations have to be on the left side
