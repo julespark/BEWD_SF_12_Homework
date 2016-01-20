@@ -1,0 +1,14 @@
+<h1>Create Tweets!</h1>
+
+<h2><%= link_to "Create a tweet", new_tweet_path %></h2>
+
+<% @tweet.each do |tweet| %>
+  <section>
+    <header>
+      (<b><%= tweet.text %></b>)
+      <%= link_to tweet.text, tweet %>
+    </header>
+    <%= tweet.text %>
+  </section>
+  <br/>
+<% end %>
