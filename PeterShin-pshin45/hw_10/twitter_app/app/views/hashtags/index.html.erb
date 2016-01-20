@@ -1,0 +1,16 @@
+<h1>See what's trending</h1>
+
+<h3><%= link_to '+ Create a New Hashtag', new_hashtag_path %></h3>
+
+<%= form_tag "/hashtags", method: "GET" do %>
+  <%= text_field_tag :q, params[:q] %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<br>
+
+<%= render 'list' %>
+
+<br>
+
+<%= link_to 'BACK', root_path %>

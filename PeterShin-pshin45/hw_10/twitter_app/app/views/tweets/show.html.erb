@@ -1,0 +1,7 @@
+<p><%= @tweet.text %></p>
+
+<%= link_to "Back", root_path %> |  
+<%= link_to "Edit", edit_tweet_path %> | 
+<%= link_to "Delete", tweet_path,
+          method: :delete,
+          data: { confirm: 'Are you sure?' } %>

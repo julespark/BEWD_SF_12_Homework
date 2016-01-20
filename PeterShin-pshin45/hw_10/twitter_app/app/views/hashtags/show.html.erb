@@ -1,0 +1,7 @@
+<p><%= @hashtag.name %></p>
+
+<%= link_to "Back", hashtags_path %> |  
+<%= link_to "Edit", edit_hashtag_path %> | 
+<%= link_to "Delete", hashtag_path,
+          method: :delete,
+          data: { confirm: 'Are you sure?' } %>
