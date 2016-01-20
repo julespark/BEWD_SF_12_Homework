@@ -1,0 +1,13 @@
+<h1>Tweet Page</h1>
+
+<h3><%= link_to "All the Users", users_path %> </h3>
+<h3><%= link_to "All the Hashtags", hashtags_path %> </h3>
+
+
+<%= form_tag "/", method: "GET" do %>
+	<%= text_field_tag :q, params[:q] %>
+	<%= submit_tag "Search" %>
+
+<% end %>
+
+<%= render("list") %>
