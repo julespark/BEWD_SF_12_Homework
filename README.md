@@ -42,7 +42,7 @@ Homework is given each Thursday, and is always due the next Thursday. Feedback o
 | 6          | [Class_07_HW](https://github.com/kradul/bewd_sf_12/tree/master/07_First_Rails_App/homework) |[06_Sharing_Behavior](https://github.com/kradul/bewd_sf_12/tree/master/06_Sharing_Behavior)<br/>[07_First_Rails_App](https://github.com/kradul/bewd_sf_12/tree/master/07_First_Rails_App)| December 17 | January 4 |
 | 10         | Twitter App |[Twitter_App](https://github.com/kradul/bewd_sf_12/blob/master/11_Forms_Associations/twitter_app.md) | January 5th |January 14th|
 | 8          | Project Pitches due.  Complete your trello board with 3 possible project pitches | [Trello Board](https://trello.com/b/6Exe50Hw/bewd-12-projects) | January 7 | January 19 |
-| 9         | Movie App | [Movie_App_Part_2](https://github.com/kradul/bewd_sf_12/blob/master/10_Forms/starter_code/movie_app_part2.md)| January 14 | January 21 |
+| 9         | Movie App, add authentication | [Movie_App_Part_2](https://github.com/kradul/bewd_sf_12/blob/master/13_Authentication/README.md)| January 14 | January 21 |
 | 10         | - | | | |
 | 11         | - | | |  |
 | 12         | - | | |  |
