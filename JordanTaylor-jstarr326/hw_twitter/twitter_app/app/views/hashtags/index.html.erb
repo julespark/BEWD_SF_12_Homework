@@ -1,0 +1,8 @@
+<h1>Hastag#index</h1>
+<p>Find me in app/views/hastag/index.html.erb</p>
+
+<% @hashtags.each do |hashtag| %>
+<li>
+	<%= link_to hashtag.name, hashtag %>
+</li>
+<% end %>
