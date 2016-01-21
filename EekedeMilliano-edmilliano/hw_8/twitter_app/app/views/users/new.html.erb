@@ -1,0 +1,9 @@
+<h1>All the Flitter users</h1>
+
+<% @users.each do |user| %>
+      <b><%= "Name: " + user.name %></b>
+      <b><%= user.premium_member %></b>
+      <br/>
+<% end %>
+
+<h3><%= link_to "back to homepage", root_path %></h3>
