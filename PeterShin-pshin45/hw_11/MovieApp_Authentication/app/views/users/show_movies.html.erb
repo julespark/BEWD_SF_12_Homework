@@ -1,0 +1,18 @@
+<!-- Had to make sure this file was named show_movies.html.erb to match route -->
+<h1>My Movies</h1>
+
+<% @movies.each do |movie| %>
+  <section>
+    <header>
+      (<b><%= movie.year_released %></b>)
+      <%= link_to movie.title, movie %> |
+      <% if movie.genre %>
+        <%= link_to movie.genre.title, movie.genre %>
+      <% end %>
+    </header>
+    <%= movie.description %>
+    <br>
+    <%= link_to "- Remove from My Movies", remove_movie_path(movie.id) %>
+  </section>
+  <br/>
+<% end %>
