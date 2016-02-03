@@ -1,0 +1,14 @@
+<h1>Welcome to the Twitter App!</h1>
+
+<h2><%= link_to "Create a user", new_user_path %></h2>
+
+<% @user.each do |user| %>
+  <section>
+    <header>
+      (<b><%= user.name %></b>)
+      <%= link_to user.name, premium_member %>
+    </header>
+    <%= user.name %>
+  </section>
+  <br/>
+<% end %>

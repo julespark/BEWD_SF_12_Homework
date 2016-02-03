@@ -1,0 +1,19 @@
+<h1> Task List </h1>
+
+<h2>To do Tasks:</h2>
+<% @listnotdone.each do |t| %>
+	<p>
+		<strong><%= t.name %><strong>
+		<small><%= link_to "Mark as done", loggedin_path(t), :method => :put %></small>
+	</p>
+<%end%>
+
+<h2>Completed Tasks:</h2>
+<% @listdone.each do |t| %>
+	<p>
+		<%= t.name %>
+		<small><%= link_to "Remove",t, loggedin_path(t), :method => :put %></small>
+	</p>
+<%end%>
+
+<p> <%= link_to "Add a new item", new_loggedin_path %></p>
