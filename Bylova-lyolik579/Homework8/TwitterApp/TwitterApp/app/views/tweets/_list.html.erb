@@ -1,0 +1,10 @@
+<% @tweet.each do |user| %>
+  <section>
+    <header>
+      (<b><%= user.name %></b>)
+      <%= link_to user.name, tweet %>
+    </header>
+    <%= user.name %>
+  </section>
+  <br/>
+<% end %>

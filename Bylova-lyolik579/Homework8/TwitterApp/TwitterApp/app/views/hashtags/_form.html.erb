@@ -1,0 +1,16 @@
+<h1>Create a new hashtag</h1>
+<% if @hashtag.errors.any? %>
+  <h2>There were errors saving your hashtag</h2>
+  <ul>
+    <% @hashtag.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @hashtag do |f| %>
+
+	<%= f.label :text %><br />
+
+	<%= f.submit %>
+<% end %>

@@ -1,0 +1,19 @@
+<% if @user.errors.any? %>
+  <h2>There were errors creating the user</h2>
+  <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @user do |f| %>
+
+	<%= f.label :name %>
+  <%= f.text_field :name %><br><br>
+
+  <%= f.label :premium_member %>
+  <%= f.text_field :premium_member %><br><br>
+
+  <%= f.submit %>
+<% end %>

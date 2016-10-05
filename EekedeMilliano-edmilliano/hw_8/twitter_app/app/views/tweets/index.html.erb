@@ -1,0 +1,15 @@
+<h1>Welcome to Flitter</h1>
+
+<%= form_tag "/", method: "GET" do %>
+  <%= text_field_tag :q, params[:q] %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<br/><br/>
+
+<%= render 'list' %>
+
+<h3><%= link_to "view all users", new_user_path %></h3>
+<h3><%= link_to "view all hashtags", new_hashtag_path %></h3>
+
+

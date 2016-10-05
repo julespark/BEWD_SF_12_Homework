@@ -1,0 +1,14 @@
+<h1>Create Hashtags!</h1>
+
+<h2><%= link_to "Create a hashtag", new_hashtag_path %></h2>
+
+<% @hastag.each do |hashtag| %>
+  <section>
+    <header>
+      (<b><%= hashtag.name %></b>)
+      <%= link_to hashtag.name, hasgtag %>
+    </header>
+    <%= hashtag.name %>
+  </section>
+  <br/>
+<% end %>
